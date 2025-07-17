@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside the Crow's Nest - Daniel de Castro</title>
+    <title>Graphics Engine - Daniel de Castro</title>
     <link rel="stylesheet" href="detailsStyle.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
 
     <main>
         <section class="project-hero">
-            <h1>Inside the Crow's Nest</h1>
-            <p class="subtitle">Survival Horror Clásico Reimaginado</p>
+            <h1>Graphics Engine</h1>
+            <p class="subtitle">Motor gráfico desarrollado como trabajo académico</p>
             
             <div class="project-meta">
                 <div class="meta-item">
@@ -26,15 +26,15 @@
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">Equipo</div>
-                    <div class="meta-value">16 personas</div>
+                    <div class="meta-value">2 personas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Engine</div>
-                    <div class="meta-value">Unreal Engine 5</div>
+                    <div class="meta-label">Librería</div>
+                    <div class="meta-value">OpenGL</div>
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">Plataforma</div>
-                    <div class="meta-value">PC / Steam</div>
+                    <div class="meta-value">PC</div>
                 </div>
             </div>
         </section>
@@ -42,19 +42,13 @@
         <section class="hero-carousel">
             <div class="carousel-track" id="mainCarousel">
                 <div class="carousel-slide">
-                    <img src="res/CrowsNest2.jpg" alt="Inside the Crow's Nest - Gameplay 1" />
+                    <img src="res/Engine.png" alt="Engine - Image 1" />
                 </div>
                 <div class="carousel-slide">
-                    <img src="res/CrowsNest3.jpg" alt="Inside the Crow's Nest - Gameplay 2" />
+                    <img src="res/Engine1.png" alt="Engine - Image 2" />
                 </div>
                 <div class="carousel-slide">
-                    <img src="res/CrowsNest4.jpg" alt="Inside the Crow's Nest - Gameplay 3" />
-                </div>
-                <div class="carousel-slide">
-                    <img src="res/CrowsNest5.jpg" alt="Inside the Crow's Nest - Gameplay 4" />
-                </div>
-                <div class="carousel-slide">
-                    <img src="res/CrowsNest6.jpg" alt="Inside the Crow's Nest - Gameplay 5" />
+                    <img src="res/Engine2.jpg" alt="Engine - Image 3" />
                 </div>
             </div>
             <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
@@ -63,55 +57,59 @@
                 <span class="indicator active" onclick="currentSlide(1)"></span>
                 <span class="indicator" onclick="currentSlide(2)"></span>
                 <span class="indicator" onclick="currentSlide(3)"></span>
-                <span class="indicator" onclick="currentSlide(4)"></span>
-                <span class="indicator" onclick="currentSlide(5)"></span>
             </div>
         </section>
 
         <div class="project-links">
-            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" class="btn-primary">🎮 Jugar en Steam</a>
-            <a href="#" class="btn-secondary">📹 Ver tráiler</a>
+            <a href="https://youtu.be/agNrxyD5lWg" class="btn-primary" data-translate="project_demo">Ver demo →</a>
         </div>
 
         <section class="content-section">
             <h2>Descripción del Proyecto</h2>
-            <p>Inside the Crow's Nest es mi proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género mientras introduce elementos modernos.</p>
-            
-            <p>El juego transporta a los jugadores a una atmósfera tensa y claustrofóbica, donde cada decisión puede significar la diferencia entre la supervivencia y la muerte. Inspirado en títulos icónicos como los primeros Resident Evil, hemos recreado la esencia del survival horror clásico con controles tipo tanque, cámaras fijas estratégicamente posicionadas y una gestión de recursos que mantiene al jugador en constante tensión.</p>
-            
-            <p>Con una duración aproximada de hora y media, el juego ofrece una experiencia completa que incluye combate estratégico, resolución de puzzles complejos, exploración atmosférica y una narrativa que se despliega gradualmente a través del entorno y los documentos encontrados.</p>
+            <p data-translate="project_engine_description">Motor gráfico desarrollado desde cero. Implementa técnicas avanzadas como forward y deferred rendering, sistema de sombras, portales, físicas mediante el uso de la librería Bullet, scripting en Lua y una arquitectura ECS con jerarquías. Además, incluye herramientas de edición integradas con ImGui y un sistema de hilos para tareas pesadas.</p>
         </section>
 
         <section class="content-section">
             <h2>Tecnologías Utilizadas</h2>
             <div class="tech-stack">
-                <span class="tech-tag">Unreal Engine 5</span>
+                <span class="tech-tag">OpenGL</span>
                 <span class="tech-tag">C++</span>
-                <span class="tech-tag">Blueprints</span>
-                <span class="tech-tag">Behavior Trees</span>
-                <span class="tech-tag">Perforce</span>
+                <span class="tech-tag">Bullet physics API</span>
+                <span class="tech-tag">ImGui</span>
             </div>
         </section>
 
         <section class="content-section">
             <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en la programación de gameplay, sistemas de IA y la integración de mecánicas core. Trabajé estrechamente con Perforce para el control de versiones, lo que me permitió desarrollar habilidades sólidas en colaboración técnica y gestión de conflictos de código en entornos multi-desarrollador.</p>
+            <p>Mi rol principal se centró en la parte de más alto nivel como puede ser el input o un sistema de hilos, aunque también participé en algunas características como la iluminación o la carga de assets</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> IA Avanzada</h3>
-                    <p>Enemigos con comportamientos complejos implementados mediante Behavior Trees, creando encuentros únicos y desafiantes.</p>
+                    <h3><span class="feature-icon">🧠</span> Sistema de input</h3>
+                    <p> Apoyandose en la librería glfw se ha realizado un sistema de input para ratón y teclado que te permite capturar tanto las diferentes teclas como el movimiento del ratón y el offset de la rueda</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Sistema de animaciones físicas</h3>
-                    <p>Enemigos con comportamientos complejos implementados mediante Behavior Trees, creando encuentros únicos y desafiantes.</p>
+                    <h3><span class="feature-icon">🧠</span> Sistema de trabajos</h3>
+                    <p>Se ha implementado un sistema de hilos en los que realizar aquellas tareas complejas de forma que la aplicación se mantenga usable en todo momento. Con el objetivo de que estos hilos puedan devolver el resultado de cualquier acción, se ha hecho uso de funciones templatizadas, generalizando el código lo máximo posible.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Sistema de guardado</h3>
-                    <p>Sistema de puzzles integrado que requiere exploración, observación y pensamiento lógico para progresar en la historia.</p>
+                    <h3><span class="feature-icon">🧩</span> Scripting en LUA</h3>
+                    <p>Se han creado e integrado las bases de un sistema de scripting con LUA. Este sistema es escalable, de forma que en un futuro se podría trabajar en el y permitir al usuario realizar acciones en LUA directamente, sin tener que utilizar C++.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Participación en el scripting de niveles</h3>
-                    <p>Sistema de inventario limitado que añade una capa estratégica a la exploración y gestión de recursos.</p>
+                    <h3><span class="feature-icon">🎒</span> Integración de físicas</h3>
+                    <p>Se ha integrado la API Bullet en el motor, permitiendo crear un sistema de físicas con los objetos en escena. Esta librería permite tener tanto objetos físicos estáticos como "Rigidbodies" y controla las interacciones entre los mismos.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="feature-icon">🎒</span> Jerarquías de objetos con ECS</h3>
+                    <p>Una tarea muy importante realizada en el motor ha sido la abstracción del mismo de forma que sea sencillo de utilizar por el usuario. Es por ello que se ha creado un sistema de objetos que nos permite realizar por debajo todas las acciones necesarias para controlar las diferentes entidades existentes y sus respectivas propiedades, mientras que el usuario tan solo debe pensar en que tipo de objeto le interesa en cada momento. Este sistema también abstrae las físicas integradas de la librería, permitiendo al usuario crear un objeto con físicas de forma sencilla.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="feature-icon">🎒</span> Editor realizado con ImGui</h3>
+                    <p>Con intención de facilitar la depuración del motor así como la creación de escenas en el mismo se ha desarrollado un editor haciendo uso de ImGui. Desde este editor podremos ver la jerarquía de objetos en la escena así como editar sus propiedades básicas, ya sea su componente de "Transform", sus propiedades físicas o el tipo de luz y sus propiedades en caso de serlo.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="feature-icon">🎒</span> Prototipo de sistema de guardado de escenas</h3>
+                    <p>Se ha creado una versión inicial de un sistema de guardado que nos permite almacenar en memoria tanto el componente de Transform de los objetos como las propiedades de las diferentes luces. De esta forma se nos permite crear una escena desde el editor sin necesidad de configurar dichos componentes desde código.</p>
                 </div>
 
             </div>

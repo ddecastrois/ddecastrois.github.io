@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside the Crow's Nest - Daniel de Castro</title>
+    <title>Networked meta avatars - Daniel de Castro</title>
     <link rel="stylesheet" href="detailsStyle.css">
 </head>
 <body>
@@ -16,25 +16,25 @@
 
     <main>
         <section class="project-hero">
-            <h1>Inside the Crow's Nest</h1>
-            <p class="subtitle">Survival Horror Clásico Reimaginado</p>
+            <h1>Networked meta avatars</h1>
+            <p class="subtitle">VR Social Experience using meta avatars</p>
             
             <div class="project-meta">
                 <div class="meta-item">
                     <div class="meta-label">Duración</div>
-                    <div class="meta-value">9 meses</div>
+                    <div class="meta-value">6 meses</div>
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">Equipo</div>
-                    <div class="meta-value">16 personas</div>
+                    <div class="meta-value">1 persona</div>
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">Engine</div>
-                    <div class="meta-value">Unreal Engine 5</div>
+                    <div class="meta-value">Unity</div>
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">Plataforma</div>
-                    <div class="meta-value">PC / Steam</div>
+                    <div class="meta-value">Meta Quest VR</div>
                 </div>
             </div>
         </section>
@@ -63,51 +63,37 @@
         </section>
 
         <div class="project-links">
-            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" class="btn-primary">🎮 Jugar en Steam</a>
-            <a href="#" class="btn-secondary">📹 Ver tráiler</a>
+            <a href="https://youtu.be/pawCmHZgQ6o" class="btn-primary" data-translate="project_demo">Ver Demo →</a>
         </div>
 
         <section class="content-section">
             <h2>Descripción del Proyecto</h2>
-            <p>Inside the Crow's Nest es mi proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género mientras introduce elementos modernos.</p>
-            
-            <p>El juego transporta a los jugadores a una atmósfera tensa y claustrofóbica, donde cada decisión puede significar la diferencia entre la supervivencia y la muerte. Inspirado en títulos icónicos como los primeros Resident Evil, hemos recreado la esencia del survival horror clásico con controles tipo tanque, cámaras fijas estratégicamente posicionadas y una gestión de recursos que mantiene al jugador en constante tensión.</p>
-            
-            <p>Con una duración aproximada de hora y media, el juego ofrece una experiencia completa que incluye combate estratégico, resolución de puzzles complejos, exploración atmosférica y una narrativa que se despliega gradualmente a través del entorno y los documentos encontrados.</p>
+                <p data-translate="project_avatars_description">Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.</p>
         </section>
 
         <section class="content-section">
             <h2>Tecnologías Utilizadas</h2>
             <div class="tech-stack">
-                <span class="tech-tag">Unreal Engine 5</span>
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">Blueprints</span>
-                <span class="tech-tag">Behavior Trees</span>
-                <span class="tech-tag">Perforce</span>
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">Multiplayer</span>
+                <span class="tech-tag">Photon PUN</span>
+                <span class="tech-tag">Meta Avatars</span>
+                <span class="tech-tag">Social VR</span>
             </div>
         </section>
 
         <section class="content-section">
             <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en la programación de gameplay, sistemas de IA y la integración de mecánicas core. Trabajé estrechamente con Perforce para el control de versiones, lo que me permitió desarrollar habilidades sólidas en colaboración técnica y gestión de conflictos de código en entornos multi-desarrollador.</p>
+            <p>Este proyecto lo realicé en solitario, por lo que me encargué de la integración de los avatares de Meta así como de la infraestructura de red para que dos usuarios puedan conectarse a la misma sala.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> IA Avanzada</h3>
-                    <p>Enemigos con comportamientos complejos implementados mediante Behavior Trees, creando encuentros únicos y desafiantes.</p>
+                    <h3><span class="feature-icon">🧠</span> Infraestructura de red</h3>
+                    <p>Trabajé con Photon PUN para Unity para establecer la conexión entre diferentes usuarios.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Sistema de animaciones físicas</h3>
-                    <p>Enemigos con comportamientos complejos implementados mediante Behavior Trees, creando encuentros únicos y desafiantes.</p>
+                    <h3><span class="feature-icon">🧠</span> Avatares </h3>
+                    <p> En el momento de realizar este trabajo se había lanzado de forma oficial el nuevo sdk de avatares de Meta. El objetivo de este trabajo era ver cuanta diferencia existía entre los avatares básicos sin expresividad facial y la nueva versión que contaba con un mejor movimiento y expresividad gracias a las Meta Quest Pro.</p>
                 </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Sistema de guardado</h3>
-                    <p>Sistema de puzzles integrado que requiere exploración, observación y pensamiento lógico para progresar en la historia.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Participación en el scripting de niveles</h3>
-                    <p>Sistema de inventario limitado que añade una capa estratégica a la exploración y gestión de recursos.</p>
-                </div>
-
             </div>
         </section>
 
