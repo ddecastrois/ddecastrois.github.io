@@ -47,55 +47,6 @@
             <p class="section-subtitle fade-up" data-translate="projects_subtitle">Una selección de mis trabajos más representativos</p>
 
             <div class="projects-container">
-                <!-- <div class="project fade-up">
-                    <div class="project-image">
-                        <div class="carousel-container">
-                            <div class="carousel-track" id="carouselTrack1">
-                                <div class="carousel-slide">
-                                    <img src="res/CrowsNest2.jpg" alt="Inside the Crow's Nest - Image 1" />
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="res/CrowsNest3.jpg" alt="Inside the Crow's Nest - Image 2" />
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="res/CrowsNest4.jpg" alt="Inside the Crow's Nest - Image 3" />
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="res/CrowsNest5.jpg" alt="Inside the Crow's Nest - Image 4" />
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="res/CrowsNest6.jpg" alt="Inside the Crow's Nest - Image 5" />
-                                </div>
-                            </div>
-        
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel1', -1)">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel1', 1)">❯</button>
-            
-                            <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel1', 1)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 2)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 3)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 4)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 5)"></span>
-                        </div>
-                    </div>
-                </div>
-                    <div class="project-info">
-                        <h3 data-translate="project_crows_nest_title">Inside the crow's nest</h3>
-                        <p data-translate="project_crows_nest_description">Proyecto final del HND en programación de videojuegos, desarrollado durante 9 meses en un equipo de 16 personas formado por programadores, artistas y diseñadores. El juego, creado con Unreal Engine, tiene una duración aproximada de hora y media y busca capturar la esencia de los survival horror clásicos como los primeros Resident Evil. Incluye controles tipo tanque, cámaras fijas, enemigos, puzles y gestión de inventario. A pesar de su enfoque nostálgico, se han modernizado tanto el control como la presentación para ofrecer una experiencia accesible y atractiva tanto para nuevos jugadores como para fans de los clásicos.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">UE5</span>
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Blueprints</span>
-                            <span class="tech-tag">Behavior trees</span>
-                            <span class="tech-tag">Perforce</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" data-translate="project_steam">Steam page →</a>
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="project fade-up">
                     <div class="project-image">
                         <div class="carousel-container">
@@ -168,19 +119,23 @@
                                 </div>
                             </div>
         
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel2', -1)">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel2', 1)">❯</button>
+                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel2', -1, event)">❮</button>
+                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel2', 1, event)">❯</button>
             
                             <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel2', 1)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel2', 2)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel2', 3)"></span>
+                            <span class="indicator active" onclick="currentSlide('carousel2', 1, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel2', 2, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel2', 3, event)"></span>
                         </div>
                     </div>
                 </div>
                     <div class="project-info">
-                        <h3 data-translate="project_engine_title">Graphics Engine</h3>
-                        <p data-translate="project_engine_description">Motor gráfico desarrollado desde cero. Implementa técnicas avanzadas como forward y deferred rendering, sistema de sombras, portales, físicas mediante el uso de la librería Bullet, scripting en Lua y una arquitectura ECS con jerarquías. Además, incluye herramientas de edición integradas con ImGui y un sistema de hilos para tareas pesadas.</p>
+                        <a href="detail_GraphicsEngine.html" class="project-title-link">
+                            <h3 data-translate="project_engine_title">Graphics Engine</h3>
+                        </a>
+                        <a href="detail_GraphicsEngine.html" class="project-link-wrapper">
+                            <p data-translate="project_engine_description">Motor gráfico desarrollado desde cero. Implementa técnicas avanzadas como forward y deferred rendering, sistema de sombras, portales, físicas mediante el uso de la librería Bullet, scripting en Lua y una arquitectura ECS con jerarquías. Además, incluye herramientas de edición integradas con ImGui y un sistema de hilos para tareas pesadas.</p>
+                        </a>
                         <div class="project-tech">
                             <span class="tech-tag">OpenGL</span>
                             <span class="tech-tag">C++</span>
@@ -208,19 +163,23 @@
                                 </div>
                             </div>
         
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel3', -1)">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel3', 1)">❯</button>
+                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel3', -1, event)">❮</button>
+                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel3', 1, event)">❯</button>
             
                             <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel3', 1)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel3', 2)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel3', 3)"></span>
+                            <span class="indicator active" onclick="currentSlide('carousel3', 1, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel3', 2, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel3', 3, event)"></span>
                         </div>
                     </div>
                     </div>
                     <div class="project-info">
-                        <h3 data-translate="project_avatars_title">Networked Meta Avatars</h3>
-                        <p data-translate="project_avatars_description">Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.</p>
+                        <a href="detail_NetworkedMetaAvatars.html" class="project-title-link">
+                            <h3 data-translate="project_avatars_title">Networked Meta Avatars</h3>
+                        </a>
+                        <a href="detail_NetworkedMetaAvatars.html" class="project-link-wrapper">
+                            <p data-translate="project_avatars_description">Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.</p>
+                        </a>
                         <div class="project-tech">
                             <span class="tech-tag">Unity</span>
                             <span class="tech-tag">Multiplayer</span>
@@ -255,21 +214,25 @@
                                 </div>
                             </div>
         
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel4', -1)">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel4', 1)">❯</button>
+                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel4', -1, event)">❮</button>
+                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel4', 1, event)">❯</button>
             
                             <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel4', 1)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel4', 2)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel4', 3)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel4', 4)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel4', 5)"></span>
+                            <span class="indicator active" onclick="currentSlide('carousel4', 1, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel4', 2, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel4', 3, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel4', 4, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel4', 5, event)"></span>
                         </div>
                     </div>
                     </div>
                     <div class="project-info">
-                        <h3 data-translate="project_tfg_title">TFG Game</h3>
-                        <p data-translate="project_tfg_description">Videojuego 2D de plataformas desarrollado en Unity como parte del Trabajo de Fin de Grado, en colaboración con otro desarrollador y utilizando Git para control de versiones. El juego incluye enemigos con inteligencia artificial, un sistema de sigilo, loot e inventario, así como efectos de sonido y mecánicas de combate. Se centró en crear una experiencia fluida y completa desde el diseño hasta la implementación final.</p>
+                        <a href="detail_TFGGame.html" class="project-title-link">
+                            <h3 data-translate="project_tfg_title">TFG Game</h3>
+                        </a>
+                        <a href="detail_TFGGame.html" class="project-link-wrapper">
+                            <p data-translate="project_tfg_description">Videojuego 2D de plataformas desarrollado en Unity como parte del Trabajo de Fin de Grado, en colaboración con otro desarrollador y utilizando Git para control de versiones. El juego incluye enemigos con inteligencia artificial, un sistema de sigilo, loot e inventario, así como efectos de sonido y mecánicas de combate. Se centró en crear una experiencia fluida y completa desde el diseño hasta la implementación final.</p>
+                        </a>
                         <div class="project-tech">
                             <span class="tech-tag">Unity</span>
                             <span class="tech-tag">C#</span>
@@ -297,19 +260,23 @@
                                 </div>
                             </div>
         
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel5', -1)">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel5', 1)">❯</button>
+                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel5', -1, event)">❮</button>
+                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel5', 1, event)">❯</button>
             
                             <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel5', 1)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel5', 2)"></span>
-                            <span class="indicator" onclick="currentSlide('carousel5', 3)"></span>
+                            <span class="indicator active" onclick="currentSlide('carousel5', 1, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel5', 2, event)"></span>
+                            <span class="indicator" onclick="currentSlide('carousel5', 3, event)"></span>
                         </div>
                     </div>
                     </div>
                     <div class="project-info">
-                        <h3 data-translate="project_soul_title">Game Jam - Soul apart</h3>
-                        <p data-translate="project_soul_description">Proyecto desarrollado en 48 horas como entrada para una game jam, en colaboración con diseñadores y artistas. Se trata de un juego 3D tipo bullet hell creado en Unity, en el que el jugador, con muy poca vida, debe esquivar ataques enemigos y devolver aquellos proyectiles que lo permiten para derrotar a una bruja.</p>
+                        <a href="detail_gamejam.html" class="project-title-link">
+                            <h3 data-translate="project_soul_title">Game Jam - Soul apart</h3>
+                        </a>
+                        <a href="detail_gamejam.html" class="project-link-wrapper">
+                            <p data-translate="project_soul_description">Proyecto desarrollado en 48 horas como entrada para una game jam, en colaboración con diseñadores y artistas. Se trata de un juego 3D tipo bullet hell creado en Unity, en el que el jugador, con muy poca vida, debe esquivar ataques enemigos y devolver aquellos proyectiles que lo permiten para derrotar a una bruja.</p>
+                        </a>
                         <div class="project-tech">
                             <span class="tech-tag">Unity</span>
                             <span class="tech-tag">C#</span>
