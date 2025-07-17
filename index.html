@@ -96,44 +96,46 @@
                     </div>
                 </div> -->
 
-                <a href="detail_crowsNest.html" class="project-link-wrapper">
-                    <div class="project fade-up">
-                        <div class="project-image">
+                <div class="project fade-up">
+                    <div class="project-image">
                         <div class="carousel-container">
                             <div class="carousel-track" id="carouselTrack1">
-                            <div class="carousel-slide">
-                                <img src="res/CrowsNest2.jpg" alt="Inside the Crow's Nest - Image 1" />
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="res/CrowsNest3.jpg" alt="Inside the Crow's Nest - Image 2" />
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="res/CrowsNest4.jpg" alt="Inside the Crow's Nest - Image 3" />
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="res/CrowsNest5.jpg" alt="Inside the Crow's Nest - Image 4" />
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="res/CrowsNest6.jpg" alt="Inside the Crow's Nest - Image 5" />
-                            </div>
+                                <div class="carousel-slide">
+                                    <img src="res/CrowsNest2.jpg" alt="Inside the Crow's Nest - Image 1" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="res/CrowsNest3.jpg" alt="Inside the Crow's Nest - Image 2" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="res/CrowsNest4.jpg" alt="Inside the Crow's Nest - Image 3" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="res/CrowsNest5.jpg" alt="Inside the Crow's Nest - Image 4" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="res/CrowsNest6.jpg" alt="Inside the Crow's Nest - Image 5" />
+                                </div>
                             </div>
 
-                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel1', -1); event.stopPropagation(); return false;">❮</button>
-                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel1', 1); event.stopPropagation(); return false;">❯</button>
+                            <button class="carousel-nav carousel-prev" onclick="changeSlide('carousel1', -1, event)">❮</button>
+                            <button class="carousel-nav carousel-next" onclick="changeSlide('carousel1', 1, event)">❯</button>
 
                             <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide('carousel1', 1); event.stopPropagation(); return false;"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 2); event.stopPropagation(); return false;"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 3); event.stopPropagation(); return false;"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 4); event.stopPropagation(); return false;"></span>
-                            <span class="indicator" onclick="currentSlide('carousel1', 5); event.stopPropagation(); return false;"></span>
+                                <span class="indicator active" onclick="currentSlide('carousel1', 1, event)"></span>
+                                <span class="indicator" onclick="currentSlide('carousel1', 2, event)"></span>
+                                <span class="indicator" onclick="currentSlide('carousel1', 3, event)"></span>
+                                <span class="indicator" onclick="currentSlide('carousel1', 4, event)"></span>
+                                <span class="indicator" onclick="currentSlide('carousel1', 5, event)"></span>
                             </div>
                         </div>
-                        </div>
-                        <div class="project-info">
-                        <h3 data-translate="project_crows_nest_title">Inside the crow's nest</h3>
-                        <p data-translate="project_crows_nest_description">Proyecto final del HND en programación de videojuegos, desarrollado durante 9 meses en un equipo de 16 personas formado por programadores, artistas y diseñadores. El juego, creado con Unreal Engine, tiene una duración aproximada de hora y media y busca capturar la esencia de los survival horror clásicos como los primeros Resident Evil. Incluye controles tipo tanque, cámaras fijas, enemigos, puzles y gestión de inventario. A pesar de su enfoque nostálgico, se han modernizado tanto el control como la presentación para ofrecer una experiencia accesible y atractiva tanto para nuevos jugadores como para fans de los clásicos.</p>
-                        
+                    </div>
+                    <div class="project-info">
+                        <a href="detail_crowsNest.html" class="project-title-link">
+                            <h3 data-translate="project_crows_nest_title">Inside the crow's nest</h3>
+                        </a>
+                        <p data-translate="project_crows_nest_description">
+                            Proyecto final del HND en programación de videojuegos, desarrollado durante 9 meses en un equipo de 16 personas formado por programadores, artistas y diseñadores. El juego, creado con Unreal Engine, tiene una duración aproximada de hora y media y busca capturar la esencia de los survival horror clásicos como los primeros Resident Evil. Incluye controles tipo tanque, cámaras fijas, enemigos, puzles y gestión de inventario. A pesar de su enfoque nostálgico, se han modernizado tanto el control como la presentación para ofrecer una experiencia accesible y atractiva tanto para nuevos jugadores como para fans de los clásicos.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">UE5</span>
                             <span class="tech-tag">C++</span>
@@ -144,9 +146,8 @@
                         <div class="project-links">
                             <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" data-translate="project_steam">Steam page →</a>
                         </div>
-                        </div>
                     </div>
-                    </a>
+                </div>
 
 
                 <div class="project fade-up">
