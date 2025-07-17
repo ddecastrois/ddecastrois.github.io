@@ -98,7 +98,7 @@
             <p>Mi rol principal se centró en la programación de los enemigos y el sistema de guardado, además de participar en el scripting de niveles. Se trabajó desde un principio con Perforce para el control de versiones, lo que nos permitió colaborar de forma cómoda y gestionar los conflictos de código.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> IA Avanzada</h3>
+                    <h3><span class="feature-icon" data-translate="details_crows_AI">🧠</span> IA</h3>
                     <p>Se crearon enemigos con comportamientos complejos y diferenciados según el tipo de enemigo mediante el uso de "behavior trees", programación C++ y Blueprints. Se hizo mucho énfasis en la parametrización con el objetivo de que el equipo de diseñadores pudiese trabajar e iterar con ellos.</p>
                 </div>
                 <div class="feature-card">
@@ -182,6 +182,31 @@
                 }
             }
         });
+    </script>
+    <script>
+    function switchLanguage(lang) {
+        document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+        
+        localStorage.setItem('preferredLanguage', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromURL = urlParams.get('lang');
+        const lang = langFromURL || localStorage.getItem('preferredLanguage') || 'es';
+
+        // Aplicar idioma
+        switchLanguage(lang);
+    });
+   
     </script>
 </body>
 </html>

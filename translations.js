@@ -22,6 +22,7 @@ const translations = {
         // Inside the Crow's Nest
         project_crows_nest_title: "Inside the crow's nest",
         project_crows_nest_description: "Proyecto final del HND en programación de videojuegos, desarrollado durante 9 meses en un equipo de 16 personas formado por programadores, artistas y diseñadores. El juego, creado con Unreal Engine, tiene una duración aproximada de hora y media y busca capturar la esencia de los survival horror clásicos como los primeros Resident Evil. Incluye controles tipo tanque, cámaras fijas, enemigos, puzles y gestión de inventario. A pesar de su enfoque nostálgico, se han modernizado tanto el control como la presentación para ofrecer una experiencia accesible y atractiva tanto para nuevos jugadores como para fans de los clásicos.",
+        details_crows_AI: "IA Avanzada",
 
         // Graphics Engine
         project_engine_title: "Graphics Engine",
@@ -107,6 +108,7 @@ const translations = {
         // Inside the Crow's Nest
         project_crows_nest_title: "Inside the crow's nest",
         project_crows_nest_description: "Final project of the HND in game programming, developed over 9 months in a team of 16 people consisting of programmers, artists and designers. The game, created with Unreal Engine, has an approximate duration of an hour and a half and seeks to capture the essence of classic survival horror games like the first Resident Evil. It includes tank controls, fixed cameras, enemies, puzzles and inventory management. Despite its nostalgic approach, both control and presentation have been modernized to offer an accessible and attractive experience for both new players and fans of the classics.",
+        details_crows_AI: "Advanced AI",
         
         // Graphics Engine
         project_engine_title: "Graphics Engine",
