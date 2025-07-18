@@ -187,7 +187,9 @@
     <script>
     function switchLanguage(lang) {
         document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
+        if (event && event.target) {
+            event.target.classList.add('active');
+        }
         
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
