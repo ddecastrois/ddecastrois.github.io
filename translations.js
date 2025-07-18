@@ -30,7 +30,7 @@ const translations = {
         project_crows_nest_title: "Inside the crow's nest",
         project_crows_nest_description: "Proyecto final del HND en programación de videojuegos, desarrollado durante 9 meses en un equipo de 16 personas formado por programadores, artistas y diseñadores. El juego, creado con Unreal Engine, tiene una duración aproximada de hora y media y busca capturar la esencia de los survival horror clásicos como los primeros Resident Evil. Incluye controles tipo tanque, cámaras fijas, enemigos, puzles y gestión de inventario. A pesar de su enfoque nostálgico, se han modernizado tanto el control como la presentación para ofrecer una experiencia accesible y atractiva tanto para nuevos jugadores como para fans de los clásicos.",
         details_crows_AI: "IA Avanzada",
-        details_crows_description_p1: "Inside the Crow's Nest es el proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género a la vez que introduce elementos modernos.",
+        details_crows_description_p1: "Inside the Crow's Nest es mi proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género a la vez que introduce elementos modernos.",
         details_crows_description_p2: "El juego transporta a los jugadores a una atmósfera tensa y claustrofóbica, donde cada decisión puede significar la diferencia entre la supervivencia y la muerte. Inspirado en títulos icónicos como los primeros Resident Evil, hemos recreado la esencia del survival horror clásico con controles tipo tanque, cámaras fijas estratégicamente posicionadas y una gestión de recursos que mantiene al jugador en constante tensión.",
         details_crows_description_p3: "Con una duración aproximada de hora y media, el juego ofrece una experiencia completa que incluye combate, resolución de puzzles complejos y exploración atmosférica y una narrativa contada a través del entorno y los documentos encontrados.",
         details_crows_subtitle: "Survival Horror Clásico Reimaginado",
@@ -78,11 +78,12 @@ const translations = {
 
         
         // Meta Avatars
-        project_avatars_title: "Meta Avatars en red - 2023",
-        project_avatars_description: "Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.",
+        project_avatars_title: "Avatares Meta en red - 2023",
+        project_avatars_description: "Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas remotas, evitando la frialdad de las videollamadas sin requerir presencialidad.",
 
         details_vr_subtitle: "Experiencia social en VR usando avatares de Meta",
 
+        details_avatars_title: "Avatares Meta en red",
         details_vr_duration_value: "6 meses",
         details_vr_team_value: "1 persona",
 
@@ -133,7 +134,7 @@ const translations = {
         details_jam_attacks_text: "El bucle principal del juego consiste en esquivar y devolver los ataques. La parte central de mi trabajo consistió en desarrollar los ataques que se decidían desde diseño. Estos ataques consisten principalmente en proyectiles lanzados con patrones concretos.",
 
         details_jam_cut_title: "Mecánicas descartadas",
-        details_jam_cut_text: "A lo largo del desarrollo se realizaron varios ataques que el jugador debería esquivar así como barriles que caerían con botín para el jugador. Estas mecánicas, aunque estaban terminadas de desarrollar se acabaron descartando con el objetivo de que el juego sea más claro.",
+        details_jam_cut_text: "A lo largo del desarrollo se realizaron varios ataques que el jugador debería esquivar así como barriles que caerían con botín para el jugador. Estas mecánicas, aunque estaban terminadas de desarrollar, se acabaron descartando con el objetivo de que el juego sea más claro.",
 
 
         
@@ -152,6 +153,7 @@ const translations = {
         // Minimalist Game
         mini_minimal_title: "Juego minimalista",
         mini_minimal_description: "Juego arcade minimalista con estética geométrica, controlado únicamente con los joysticks del mando. El jugador maneja dos personajes a la vez para defender un cristal central: uno con escudo y otro con disparos, combinando acción y coordinación.",
+        mini_minimal_tag: "Minimalista",
         
         // Bullet Hell
         mini_bullet_title: "Bullet hell",
@@ -242,7 +244,7 @@ const translations = {
         details_engine_input_text: "Using the GLFW library, an input system for mouse and keyboard was implemented that captures both key presses and mouse movement, including scroll wheel offset.",
 
         details_engine_jobs_title: "Job System",
-        details_engine_jobs_text: "A multithreaded job system was implemented to offload complex tasks while keeping the application responsive. To allow these threads to return results, templated functions were used to generalize the logic as much as possible.",
+        details_engine_jobs_text: "A multithreaded job system was implemented to execute complex tasks while keeping the application responsive. To allow these threads to return results, templated functions were used to generalize the logic as much as possible.",
 
         details_engine_lua_title: "LUA Scripting",
         details_engine_lua_text: "The foundations of a scripting system using LUA were created and integrated. This system is scalable, making it possible to extend it so users can eventually define behaviors in LUA directly instead of using C++.",
@@ -269,8 +271,9 @@ const translations = {
         
         // Meta Avatars
         project_avatars_title: "Networked Meta Avatars - 2023",
-        project_avatars_description: "Virtual reality project developed as part of the Master's Thesis, focused on the integration of Meta avatars in a multiplayer environment with interaction. Using Proton and Meta technology for VR, a shared virtual room was implemented where multiple users can connect and communicate through their avatars, with the ability to interact with the environment. The goal was to study the feasibility of using virtual reality environments as a more human and accessible alternative to traditional psychological sessions, avoiding the coldness of video calls without requiring physical presence.",
+        project_avatars_description: "Virtual reality project developed as part of the Master's Thesis, focused on the integration of Meta avatars in a multiplayer environment with interaction. Using Proton and Meta technology for VR, a shared virtual room was implemented where multiple users can connect and communicate through their avatars, with the ability to interact with the environment. The goal was to study the feasibility of using virtual reality environments as a more human and accessible alternative to remote psychological sessions, avoiding the coldness of video calls without requiring physical presence.",
         details_vr_subtitle: "VR Social Experience using Meta avatars",
+        details_avatars_title: "Networked Meta Avatars",
         
         details_vr_duration_value: "6 months",
         details_vr_team_value: "1 person",
@@ -339,6 +342,7 @@ const translations = {
         // Minimalist Game
         mini_minimal_title: "Minimalist game",
         mini_minimal_description: "Minimalist arcade game with geometric aesthetics, controlled only with the controller joysticks. The player manages two characters at once to defend a central crystal: one with a shield and another one which shoots, combining action and coordination.",
+        mini_minimal_tag: "Minimalist",
         
         // Bullet Hell
         mini_bullet_title: "Bullet hell",
@@ -360,9 +364,9 @@ const translations = {
         
         // About Me
         about_title: "About me",
-        about_paragraph1: "I'm Daniel de Castro Isasi, a game developer with both technical and academic training. I have an HND in Game Programming from ESAT, a Computer Science degree and a Master's in Artificial Intelligence from UPV, which has provided me with a solid foundation in both development and emerging technologies.",
-        about_paragraph2: "My experience ranges from developing graphics engines from scratch to creating complete virtual reality experiences. I have worked with multidisciplinary teams of up to 16 people, using tools like Unreal Engine 5, Unity, and advanced technologies like OpenGL and Bullet Physics. My most notable project, \"Inside the Crow's Nest\", was developed over 9 months and is available on Steam.",
-        about_paragraph3: "I really enjoy developing gameplay systems as well as AI that brings life, immersion and challenge to the player, and I enjoy the development of a video game from the prototyping phases to the completion of the latest profiles and improvements in them.",
+        about_paragraph1: "I'm Daniel de Castro Isasi, a game developer with both technical and academic training. I have an HND in Game Programming from ESAT, a Computer Science degree and a Master in Artificial Intelligence from UPV, which has provided me with a solid foundation in both development and emerging technologies.",
+        about_paragraph2: "My experience ranges from developing graphics engines from scratch to creating complete virtual reality experiences. I have worked with multidisciplinary teams of up to 16 people, using tools like Unreal Engine 5, Unity, and advanced technologies like OpenGL and Bullet Physics. My most notable project, \"Inside the Crow's Nest\", was developed in over 9 months and is available on Steam.",
+        about_paragraph3: "I really enjoy developing gameplay systems as well as AI that brings life, immersion and challenge to the player, and I enjoy the development of a video game from the prototyping phases to the completion of the latest touches and improvements in them.",
         
         // Contact
         contact_title: "Contact",

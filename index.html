@@ -336,7 +336,7 @@
                     </div>
                     <p data-translate="mini_minimal_description">Juego arcade minimalista con estética geométrica, controlado únicamente con los joysticks del mando. El jugador maneja dos personajes a la vez para defender un cristal central: uno con escudo y otro con disparos, combinando acción y coordinación.</p>
                     <div class="mini-project-tech">
-                        <span class="mini-tech-tag">Minimalista</span>
+                        <span class="mini-tech-tag" data-translate="mini_minimal_tag">Minimalista</span>
                         <span class="mini-tech-tag">Unity</span>
                         <span class="mini-tech-tag">Twin stick</span>
                     </div>
@@ -698,7 +698,7 @@
     });
 
     function goToDetail(page, event) {
-        event.preventDefault(); // 🔧 This stops the default <a> behavior
+        event.preventDefault(); 
         const lang = localStorage.getItem('preferredLanguage') || 'es';
         window.location.href = `${page}?lang=${lang}`;
     }
