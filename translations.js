@@ -22,7 +22,7 @@ const translations = {
         details_description_title: "Descripción del proyecto",
         details_back_to_portfolio: "← Volver al portafolio",
         details_team_label: "Equipo",
-        details_engine_label: "Engine",
+        details_engine_label: "Motor",
         details_platform_label: "Plataforma",
         details_tech_title: "Tecnologías Utilizadas",
         
@@ -203,10 +203,10 @@ const translations = {
         details_tasks_title: "Assigned Tasks",
         details_description_title: "Project Description",
         details_back_to_portfolio: "← Back to portfolio",
-        details_duration_label: "Duración",
-        details_team_label: "Equipo",
+        details_duration_label: "Duration",
+        details_team_label: "Team",
         details_engine_label: "Engine",
-        details_platform_label: "Plataforma",
+        details_platform_label: "Platform",
         details_tech_title: "Technologies Used",
 
         
