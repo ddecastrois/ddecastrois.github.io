@@ -457,30 +457,27 @@
 
 
     <script>
-        // Sistema de carruseles mejorado y automático
+
         const carousels = {};
 
-        // Función para inicializar carruseles automáticamente
         function initCarousels() {
-            // Buscar todos los carruseles en la página
+
             document.querySelectorAll('.carousel-container').forEach((container, index) => {
                 const track = container.querySelector('.carousel-track');
                 const slides = track.querySelectorAll('.carousel-slide');
                 const carouselId = `carousel${index + 1}`;
                 
-                // Asignar ID si no lo tiene
+
                 if (!track.id) {
                     track.id = `carouselTrack${index + 1}`;
                 }
                 
-                // Configurar el carrusel con el número real de slides
                 carousels[carouselId] = {
                     currentSlide: 0,
                     totalSlides: slides.length,
                     trackId: track.id
                 };
                 
-                // Actualizar los botones para usar el ID correcto
                 const prevBtn = container.querySelector('.carousel-prev');
                 const nextBtn = container.querySelector('.carousel-next');
                 const indicators = container.querySelectorAll('.indicator');
@@ -538,10 +535,9 @@
             });
         }
 
-        // Inicializar todos los carruseles cuando se carga la página
+
         document.addEventListener('DOMContentLoaded', initCarousels);
 
-        // Touch/swipe support para todos los carruseles
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.carousel-track').forEach(track => {
                 let startX = 0;
@@ -556,7 +552,7 @@
                     const diff = startX - endX;
                     
                     if (Math.abs(diff) > 50) {
-                        // Encontrar el carrusel correspondiente
+
                         const carouselId = Object.keys(carousels).find(id => 
                             carousels[id].trackId === track.id
                         );
@@ -573,10 +569,9 @@
             });
         });
 
-        // Keyboard navigation (funciona en el carrusel que esté visible)
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-                // Encontrar el carrusel más visible en pantalla
                 let visibleCarousel = null;
                 let maxVisibility = 0;
                 
