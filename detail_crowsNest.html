@@ -10,30 +10,30 @@
     <header>
         <div class="header-content">
             <a href="#" class="logo">Daniel de Castro</a>
-            <a href="index.html" class="back-link">← Volver al portafolio</a>
+            <a href="#" class="back-link" data-translate="details_back_to_portfolio" onclick="goBackToIndex(event)">← Volver al portafolio</a>
         </div>
     </header>
 
     <main>
         <section class="project-hero">
             <h1>Inside the Crow's Nest</h1>
-            <p class="subtitle">Survival Horror Clásico Reimaginado</p>
+            <p class="subtitle" data-translate="details_crows_subtitle">Survival Horror Clásico Reimaginado</p>
             
             <div class="project-meta">
                 <div class="meta-item">
-                    <div class="meta-label">Duración</div>
-                    <div class="meta-value">9 meses</div>
+                    <div class="meta-label" data-transladetails_engine_team_valuete="details_duration_label">Duración</div>
+                    <div class="meta-value" data-translate="details_crows_duration_value">9 meses</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Equipo</div>
-                    <div class="meta-value">16 personas</div>
+                    <div class="meta-label" data-translate="details_team_label">Equipo</div>
+                    <div class="meta-value" data-translate="details_crows_team_value">16 personas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Engine</div>
+                    <div class="meta-label" data-translate="details_engine_label">Engine</div>
                     <div class="meta-value">Unreal Engine 5</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Plataforma</div>
+                    <div class="meta-label" data-translate="details_platform_label">Plataforma</div>
                     <div class="meta-value">PC / Steam</div>
                 </div>
             </div>
@@ -69,21 +69,28 @@
         </section>
 
         <div class="project-links">
-            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" class="btn-primary">🎮 Jugar en Steam</a>
-            <a href="#" class="btn-secondary">📹 Ver tráiler</a>
+            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" data-translate="project_steam" class="btn-primary">Steam page →</a>
+            <a href="https://www.youtube.com/watch?v=SuqeJ9jeXic" class="btn-secondary">Trailer →</a>
         </div>
 
         <section class="content-section">
-            <h2>Descripción del Proyecto</h2>
-            <p>Inside the Crow's Nest es el proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género a la vez que introduce elementos modernos.</p>
-            
-            <p>El juego transporta a los jugadores a una atmósfera tensa y claustrofóbica, donde cada decisión puede significar la diferencia entre la supervivencia y la muerte. Inspirado en títulos icónicos como los primeros Resident Evil, hemos recreado la esencia del survival horror clásico con controles tipo tanque, cámaras fijas estratégicamente posicionadas y una gestión de recursos que mantiene al jugador en constante tensión.</p>
-            
-            <p>Con una duración aproximada de hora y media, el juego ofrece una experiencia completa que incluye combate, resolución de puzzles complejos y exploración atmosférica y una narrativa contada a través del entorno y los documentos encontrados.</p>
+            <h2 data-translate="details_description_title">Descripción del Proyecto</h2>
+
+            <p data-translate="details_crows_description_p1">
+                Inside the Crow's Nest es el proyecto más ambicioso hasta la fecha, desarrollado como trabajo final del HND en Programación de Videojuegos en la ESAT. Durante 9 meses intensos, trabajé junto a un equipo multidisciplinario de 16 personas para crear una experiencia de survival horror que rinde homenaje a los clásicos del género a la vez que introduce elementos modernos.
+            </p>
+
+            <p data-translate="details_crows_description_p2">
+                El juego transporta a los jugadores a una atmósfera tensa y claustrofóbica, donde cada decisión puede significar la diferencia entre la supervivencia y la muerte. Inspirado en títulos icónicos como los primeros Resident Evil, hemos recreado la esencia del survival horror clásico con controles tipo tanque, cámaras fijas estratégicamente posicionadas y una gestión de recursos que mantiene al jugador en constante tensión.
+            </p>
+
+            <p data-translate="details_crows_description_p3">
+                Con una duración aproximada de hora y media, el juego ofrece una experiencia completa que incluye combate, resolución de puzzles complejos y exploración atmosférica y una narrativa contada a través del entorno y los documentos encontrados.
+            </p>
         </section>
 
         <section class="content-section">
-            <h2>Tecnologías Utilizadas</h2>
+            <h2 data-translate="details_tech_title">Tecnologías Utilizadas</h2>
             <div class="tech-stack">
                 <span class="tech-tag">Unreal Engine 5</span>
                 <span class="tech-tag">C++</span>
@@ -94,28 +101,37 @@
         </section>
 
         <section class="content-section">
-            <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en la programación de los enemigos y el sistema de guardado, además de participar en el scripting de niveles. Se trabajó desde un principio con Perforce para el control de versiones, lo que nos permitió colaborar de forma cómoda y gestionar los conflictos de código.</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3 data-translate="details_crows_AI"><span class="feature-icon">🧠</span> IA</h3>
-                    <p data-translate="details_crows_AI">Se crearon enemigos con comportamientos complejos y diferenciados según el tipo de enemigo mediante el uso de "behavior trees", programación C++ y Blueprints. Se hizo mucho énfasis en la parametrización con el objetivo de que el equipo de diseñadores pudiese trabajar e iterar con ellos.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Sistema de animaciones físicas</h3>
-                    <p>Para dotar a los enemigos de mayor variedad y realismo se realizaron animaciones mediante físicas para dar un mayor feedback al jugador. De esta forma se consiguió que su reacción fuese diferente dependiendo de donde provenga el ataque.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Sistema de guardado</h3>
-                    <p>Se implementó un sistema de guardado manual con la posibilidad de ofrecer autoguardado. Este sistema se entrelaza con el sistema de "level-streaming" para guardar el estado de cada una de las habitaciones, así como de los enemigos y el progreso en los puzles.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Participación en el scripting de niveles</h3>
-                    <p>Junto con los diseñadores, participé en el scripting de los niveles, añadiendo algunos eventos concretos o ayudando con el comportamiento de los puzles.</p>
-                </div>
-
-            </div>
-        </section>
+    <h2 data-translate="details_tasks_title">Tareas asignadas</h2>
+    <p data-translate="details_crows_tasks_intro">
+        Mi rol principal se centró en la programación de los enemigos y el sistema de guardado, además de participar en el scripting de niveles. Se trabajó desde un principio con Perforce para el control de versiones, lo que nos permitió colaborar de forma cómoda y gestionar los conflictos de código.
+    </p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧠</span> <span data-translate="details_crows_AI">IA avanzada</span></h3>
+            <p data-translate="details_crows_AI_text">
+                Se crearon enemigos con comportamientos complejos y diferenciados según el tipo de enemigo mediante el uso de "behavior trees", programación C++ y Blueprints. Se hizo mucho énfasis en la parametrización con el objetivo de que el equipo de diseñadores pudiese trabajar e iterar con ellos.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧠</span> <span data-translate="details_crows_physics_title">Sistema de animaciones físicas</span></h3>
+            <p data-translate="details_crows_physics_text">
+                Para dotar a los enemigos de mayor variedad y realismo se realizaron animaciones mediante físicas para dar un mayor feedback al jugador. De esta forma se consiguió que su reacción fuese diferente dependiendo de donde provenga el ataque.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧩</span> <span data-translate="details_crows_save_title">Sistema de guardado</span></h3>
+            <p data-translate="details_crows_save_text">
+                Se implementó un sistema de guardado manual con la posibilidad de ofrecer autoguardado. Este sistema se entrelaza con el sistema de "level-streaming" para guardar el estado de cada una de las habitaciones, así como de los enemigos y el progreso en los puzles.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🎒</span> <span data-translate="details_crows_script_title">Participación en el scripting de niveles</span></h3>
+            <p data-translate="details_crows_script_text">
+                Junto con los diseñadores, participé en el scripting de los niveles, añadiendo algunos eventos concretos o ayudando con el comportamiento de los puzles.
+            </p>
+        </div>
+    </div>
+</section>
 
     </main>
 
@@ -210,8 +226,13 @@
 
         switchLanguage(lang);
     });
-
-   
+    </script>
+    <script>
+        function goBackToIndex(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferredLanguage') || 'es';
+            window.location.href = `index.html?lang=${lang}`;
+        }
     </script>
 </body>
 </html>

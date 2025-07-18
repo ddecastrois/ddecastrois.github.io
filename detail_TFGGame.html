@@ -11,30 +11,30 @@
     <header>
         <div class="header-content">
             <a href="#" class="logo">Daniel de Castro</a>
-            <a href="index.html" class="back-link">← Volver al portafolio</a>
+            <a href="#" class="back-link" data-translate="details_back_to_portfolio" onclick="goBackToIndex(event)">← Volver al portafolio</a>
         </div>
     </header>
 
     <main>
         <section class="project-hero">
             <h1>TFG Game - The Unnamed</h1>
-            <p class="subtitle">Juego 2D de plataformas</p>
-            
+            <p class="subtitle" data-translate="details_platformer_subtitle">Juego 2D de plataformas</p>
+
             <div class="project-meta">
                 <div class="meta-item">
-                    <div class="meta-label">Duración</div>
-                    <div class="meta-value">6 meses</div>
+                    <div class="meta-label" data-translate="details_duration_label">Duración</div>
+                    <div class="meta-value" data-translate="details_platformer_duration_value">6 meses</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Equipo</div>
-                    <div class="meta-value">2 personas</div>
+                    <div class="meta-label" data-translate="details_team_label">Equipo</div>
+                    <div class="meta-value" data-translate="details_platformer_team_value">2 personas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Engine</div>
+                    <div class="meta-label" data-translate="details_label">Engine</div>
                     <div class="meta-value">Unity</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Plataforma</div>
+                    <div class="meta-label" data-translate="details_platform_label">Plataforma</div>
                     <div class="meta-value">PC</div>
                 </div>
             </div>
@@ -75,12 +75,12 @@
         </div>
 
         <section class="content-section">
-            <h2>Descripción del Proyecto</h2>
+            <h2 data-translate="details_description_title">Descripción del Proyecto</h2>
             <p data-translate="project_tfg_description">Videojuego 2D de plataformas desarrollado en Unity como parte del Trabajo de Fin de Grado, en colaboración con otro desarrollador y utilizando Git para control de versiones. El juego incluye enemigos con inteligencia artificial, un sistema de sigilo, loot e inventario, así como efectos de sonido y mecánicas de combate. Se centró en crear una experiencia fluida y completa desde el diseño hasta la implementación final.</p>
         </section>
 
         <section class="content-section">
-            <h2>Tecnologías Utilizadas</h2>
+            <h2 data-translate="details_tech_title">Tecnologías Utilizadas</h2>
             <div class="tech-stack">
                 <span class="tech-tag">Unity</span>
                 <span class="tech-tag">C#</span>
@@ -89,27 +89,36 @@
         </section>
 
         <section class="content-section">
-            <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en la programación del movimiento del jugador, sistemas de IA y combate y integración de animaciones</p>
+            <h2 data-translate="details_tasks_title">Tareas asignadas</h2>
+            <p data-translate="details_platformer_tasks_intro">
+                Mi rol principal se centró en la programación del movimiento del jugador, sistemas de IA y combate y la integración de animaciones.
+            </p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> IA y combate</h3>
-                    <p>Creación de una máquina de estados para establecer los comportamientos de los diferentes tipos de enemigos, así como una máquina especial para el jefe final</p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_platformer_ai_title">IA y combate</span></h3>
+                    <p data-translate="details_platformer_ai_text">
+                        Creación de una máquina de estados para establecer los comportamientos de los diferentes tipos de enemigos, así como una máquina especial para el jefe final.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Integración de animaciones</h3>
-                    <p>Se ha utilizado el "Animator" de unity para establecer una máquina de estados de animaciones tanto de los enemigos como del personaje principal</p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_platformer_animations_title">Integración de animaciones</span></h3>
+                    <p data-translate="details_platformer_animations_text">
+                        Se ha utilizado el "Animator" de Unity para establecer una máquina de estados de animaciones tanto de los enemigos como del personaje principal.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Movimiento del jugador</h3>
-                    <p>Se desarrolló el sistema de movimiento 2D del jugador, incluyendo salto y plataformas que atravesar o sobre las que saltar</p>
+                    <h3><span class="feature-icon">🧩</span> <span data-translate="details_platformer_movement_title">Movimiento del jugador</span></h3>
+                    <p data-translate="details_platformer_movement_text">
+                        Se desarrolló el sistema de movimiento 2D del jugador, incluyendo salto y plataformas que atravesar o sobre las que saltar.
+                    </p>
                 </div>
-
             </div>
         </section>
 
+
     </main>
 
+    <script src="translations.js"></script>
     <script>
         let currentSlideIndex = 0;
         const totalSlides = 5;
@@ -173,6 +182,40 @@
                 }
             }
         });
+    </script>
+    <script>
+    function switchLanguage(lang, event = null) {
+        document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
+
+        if (event && event.target && event.target.classList) {
+            event.target.classList.add('active');
+        }
+
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+
+        localStorage.setItem('preferredLanguage', lang);
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromURL = urlParams.get('lang');
+        const lang = langFromURL || localStorage.getItem('preferredLanguage') || 'es';
+
+        switchLanguage(lang);
+    });
+    </script>
+    <script>
+        function goBackToIndex(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferredLanguage') || 'es';
+            window.location.href = `index.html?lang=${lang}`;
+        }
     </script>
 </body>
 </html>

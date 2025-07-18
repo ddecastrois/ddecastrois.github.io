@@ -10,33 +10,34 @@
     <header>
         <div class="header-content">
             <a href="#" class="logo">Daniel de Castro</a>
-            <a href="index.html" class="back-link">← Volver al portafolio</a>
+            <a href="#" class="back-link" data-translate="details_back_to_portfolio" onclick="goBackToIndex(event)">← Volver al portafolio</a>
         </div>
     </header>
 
     <main>
         <section class="project-hero">
             <h1>Networked meta avatars</h1>
-            <p class="subtitle">VR Social Experience using meta avatars</p>
-            
+            <p class="subtitle" data-translate="details_vr_subtitle">VR Social Experience using meta avatars</p>
+
             <div class="project-meta">
                 <div class="meta-item">
-                    <div class="meta-label">Duración</div>
-                    <div class="meta-value">6 meses</div>
+                    <div class="meta-label" data-translate="details_duration_label">Duración</div>
+                    <div class="meta-value" data-translate="details_vr_duration_value">6 meses</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Equipo</div>
-                    <div class="meta-value">1 persona</div>
+                    <div class="meta-label" data-translate="details_team_label">Equipo</div>
+                    <div class="meta-value" data-translate="details_vr_team_value">1 persona</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Engine</div>
+                    <div class="meta-label" data-translate="details_engine_label">Engine</div>
                     <div class="meta-value">Unity</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Plataforma</div>
+                    <div class="meta-label" data-translate="details_platform_label">Plataforma</div>
                     <div class="meta-value">Meta Quest VR</div>
                 </div>
             </div>
+
         </section>
 
         <section class="hero-carousel">
@@ -67,12 +68,12 @@
         </div>
 
         <section class="content-section">
-            <h2>Descripción del Proyecto</h2>
-                <p data-translate="project_avatars_description">Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.</p>
+            <h2 data-translate="details_description_title">Descripción del Proyecto</h2>
+            <p data-translate="project_avatars_description">Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.</p>
         </section>
 
         <section class="content-section">
-            <h2>Tecnologías Utilizadas</h2>
+            <h2 data-translate="details_tech_title">Tecnologías Utilizadas</h2>
             <div class="tech-stack">
                 <span class="tech-tag">Unity</span>
                 <span class="tech-tag">Multiplayer</span>
@@ -83,22 +84,30 @@
         </section>
 
         <section class="content-section">
-            <h2>Tareas asignadas</h2>
-            <p>Este proyecto lo realicé en solitario, por lo que me encargué de la integración de los avatares de Meta así como de la infraestructura de red para que dos usuarios puedan conectarse a la misma sala.</p>
+            <h2 data-translate="details_tasks_title">Tareas asignadas</h2>
+            <p data-translate="details_vr_tasks_intro">
+                Este proyecto lo realicé en solitario, por lo que me encargué de la integración de los avatares de Meta así como de la infraestructura de red para que dos usuarios puedan conectarse a la misma sala.
+            </p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Infraestructura de red</h3>
-                    <p>Trabajé con Photon PUN para Unity para establecer la conexión entre diferentes usuarios.</p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_vr_networking_title">Infraestructura de red</span></h3>
+                    <p data-translate="details_vr_networking_text">
+                        Trabajé con Photon PUN para Unity para establecer la conexión entre diferentes usuarios.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Avatares </h3>
-                    <p> En el momento de realizar este trabajo se había lanzado de forma oficial el nuevo sdk de avatares de Meta. El objetivo de este trabajo era ver cuanta diferencia existía entre los avatares básicos sin expresividad facial y la nueva versión que contaba con un mejor movimiento y expresividad gracias a las Meta Quest Pro.</p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_vr_avatars_title">Avatares</span></h3>
+                    <p data-translate="details_vr_avatars_text">
+                        En el momento de realizar este trabajo se había lanzado de forma oficial el nuevo sdk de avatares de Meta. El objetivo de este trabajo era ver cuanta diferencia existía entre los avatares básicos sin expresividad facial y la nueva versión que contaba con un mejor movimiento y expresividad gracias a las Meta Quest Pro.
+                    </p>
                 </div>
             </div>
         </section>
 
+
     </main>
 
+    <script src="translations.js"></script>
     <script>
         let currentSlideIndex = 0;
         const totalSlides = 3;
@@ -162,6 +171,40 @@
                 }
             }
         });
+    </script>
+    <script>
+        function switchLanguage(lang, event = null) {
+            document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
+
+            if (event && event.target && event.target.classList) {
+                event.target.classList.add('active');
+            }
+
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langFromURL = urlParams.get('lang');
+            const lang = langFromURL || localStorage.getItem('preferredLanguage') || 'es';
+
+            switchLanguage(lang);
+        });
+    </script>
+    <script>
+        function goBackToIndex(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferredLanguage') || 'es';
+            window.location.href = `index.html?lang=${lang}`;
+        }
     </script>
 </body>
 </html>

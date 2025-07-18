@@ -10,30 +10,31 @@
     <header>
         <div class="header-content">
             <a href="#" class="logo">Daniel de Castro</a>
-            <a href="index.html" class="back-link">← Volver al portafolio</a>
+            <a href="#" class="back-link" data-translate="details_back_to_portfolio" onclick="goBackToIndex(event)">← Volver al portafolio</a>
+
         </div>
     </header>
 
     <main>
-        <section class="project-hero">
-            <h1>Graphics Engine</h1>
-            <p class="subtitle">Motor gráfico desarrollado como trabajo académico</p>
-            
+       <section class="project-hero">
+            <h1 data-translate="details_engine_title">Motor gráfico</h1>
+            <p class="subtitle" data-translate="details_engine_subtitle">Motor gráfico desarrollado como trabajo académico</p>
+
             <div class="project-meta">
                 <div class="meta-item">
-                    <div class="meta-label">Duración</div>
-                    <div class="meta-value">9 meses</div>
+                    <div class="meta-label" data-translate="details_duration_label">Duración</div>
+                    <div class="meta-value" data-translate="details_engine_duration_value">9 meses</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Equipo</div>
-                    <div class="meta-value">2 personas</div>
+                    <div class="meta-label" data-translate="details_team_label">Equipo</div>
+                    <div class="meta-value" data-translate="details_engine_team_value">2 personas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Librería</div>
+                    <div class="meta-label" data-translate="details_engine_label">Librería</div>
                     <div class="meta-value">OpenGL</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Plataforma</div>
+                    <div class="meta-label" data-translate="details_platform_label">Plataforma</div>
                     <div class="meta-value">PC</div>
                 </div>
             </div>
@@ -65,12 +66,12 @@
         </div>
 
         <section class="content-section">
-            <h2>Descripción del Proyecto</h2>
+            <h2 data-translate="details_description_title">Descripción del Proyecto</h2>
             <p data-translate="project_engine_description">Motor gráfico desarrollado desde cero. Implementa técnicas avanzadas como forward y deferred rendering, sistema de sombras, portales, físicas mediante el uso de la librería Bullet, scripting en Lua y una arquitectura ECS con jerarquías. Además, incluye herramientas de edición integradas con ImGui y un sistema de hilos para tareas pesadas.</p>
         </section>
 
         <section class="content-section">
-            <h2>Tecnologías Utilizadas</h2>
+            <h2 data-translate="details_tech_title">Tecnologías Utilizadas</h2>
             <div class="tech-stack">
                 <span class="tech-tag">OpenGL</span>
                 <span class="tech-tag">C++</span>
@@ -80,43 +81,60 @@
         </section>
 
         <section class="content-section">
-            <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en la parte de más alto nivel como puede ser el input o un sistema de hilos, aunque también participé en algunas características como la iluminación o la carga de assets</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Sistema de input</h3>
-                    <p> Apoyandose en la librería glfw se ha realizado un sistema de input para ratón y teclado que te permite capturar tanto las diferentes teclas como el movimiento del ratón y el offset de la rueda</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Sistema de trabajos</h3>
-                    <p>Se ha implementado un sistema de hilos en los que realizar aquellas tareas complejas de forma que la aplicación se mantenga usable en todo momento. Con el objetivo de que estos hilos puedan devolver el resultado de cualquier acción, se ha hecho uso de funciones templatizadas, generalizando el código lo máximo posible.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Scripting en LUA</h3>
-                    <p>Se han creado e integrado las bases de un sistema de scripting con LUA. Este sistema es escalable, de forma que en un futuro se podría trabajar en el y permitir al usuario realizar acciones en LUA directamente, sin tener que utilizar C++.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Integración de físicas</h3>
-                    <p>Se ha integrado la API Bullet en el motor, permitiendo crear un sistema de físicas con los objetos en escena. Esta librería permite tener tanto objetos físicos estáticos como "Rigidbodies" y controla las interacciones entre los mismos.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Jerarquías de objetos con ECS</h3>
-                    <p>Una tarea muy importante realizada en el motor ha sido la abstracción del mismo de forma que sea sencillo de utilizar por el usuario. Es por ello que se ha creado un sistema de objetos que nos permite realizar por debajo todas las acciones necesarias para controlar las diferentes entidades existentes y sus respectivas propiedades, mientras que el usuario tan solo debe pensar en que tipo de objeto le interesa en cada momento. Este sistema también abstrae las físicas integradas de la librería, permitiendo al usuario crear un objeto con físicas de forma sencilla.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Editor realizado con ImGui</h3>
-                    <p>Con intención de facilitar la depuración del motor así como la creación de escenas en el mismo se ha desarrollado un editor haciendo uso de ImGui. Desde este editor podremos ver la jerarquía de objetos en la escena así como editar sus propiedades básicas, ya sea su componente de "Transform", sus propiedades físicas o el tipo de luz y sus propiedades en caso de serlo.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><span class="feature-icon">🎒</span> Prototipo de sistema de guardado de escenas</h3>
-                    <p>Se ha creado una versión inicial de un sistema de guardado que nos permite almacenar en memoria tanto el componente de Transform de los objetos como las propiedades de las diferentes luces. De esta forma se nos permite crear una escena desde el editor sin necesidad de configurar dichos componentes desde código.</p>
-                </div>
+    <h2 data-translate="details_engine_tasks_title">Tareas asignadas</h2>
+    <p data-translate="details_engine_tasks_intro">
+        Mi rol principal se centró en la parte de más alto nivel como puede ser el input o un sistema de hilos, aunque también participé en algunas características como la iluminación o la carga de assets
+    </p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧠</span> <span data-translate="details_engine_input_title">Sistema de input</span></h3>
+            <p data-translate="details_engine_input_text">
+                Apoyandose en la librería glfw se ha realizado un sistema de input para ratón y teclado que te permite capturar tanto las diferentes teclas como el movimiento del ratón y el offset de la rueda
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧠</span> <span data-translate="details_engine_jobs_title">Sistema de trabajos</span></h3>
+            <p data-translate="details_engine_jobs_text">
+                Se ha implementado un sistema de hilos en los que realizar aquellas tareas complejas de forma que la aplicación se mantenga usable en todo momento. Con el objetivo de que estos hilos puedan devolver el resultado de cualquier acción, se ha hecho uso de funciones templatizadas, generalizando el código lo máximo posible.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🧩</span> <span data-translate="details_engine_lua_title">Scripting en LUA</span></h3>
+            <p data-translate="details_engine_lua_text">
+                Se han creado e integrado las bases de un sistema de scripting con LUA. Este sistema es escalable, de forma que en un futuro se podría trabajar en el y permitir al usuario realizar acciones en LUA directamente, sin tener que utilizar C++.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_physics_title">Integración de físicas</span></h3>
+            <p data-translate="details_engine_physics_text">
+                Se ha integrado la API Bullet en el motor, permitiendo crear un sistema de físicas con los objetos en escena. Esta librería permite tener tanto objetos físicos estáticos como "Rigidbodies" y controla las interacciones entre los mismos.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_ecs_title">Jerarquías de objetos con ECS</span></h3>
+            <p data-translate="details_engine_ecs_text">
+                Una tarea muy importante realizada en el motor ha sido la abstracción del mismo de forma que sea sencillo de utilizar por el usuario. Es por ello que se ha creado un sistema de objetos que nos permite realizar por debajo todas las acciones necesarias para controlar las diferentes entidades existentes y sus respectivas propiedades, mientras que el usuario tan solo debe pensar en que tipo de objeto le interesa en cada momento. Este sistema también abstrae las físicas integradas de la librería, permitiendo al usuario crear un objeto con físicas de forma sencilla.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_editor_title">Editor realizado con ImGui</span></h3>
+            <p data-translate="details_engine_editor_text">
+                Con intención de facilitar la depuración del motor así como la creación de escenas en el mismo se ha desarrollado un editor haciendo uso de ImGui. Desde este editor podremos ver la jerarquía de objetos en la escena así como editar sus propiedades básicas, ya sea su componente de "Transform", sus propiedades físicas o el tipo de luz y sus propiedades en caso de serlo.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_save_title">Prototipo de sistema de guardado de escenas</span></h3>
+            <p data-translate="details_engine_save_text">
+                Se ha creado una versión inicial de un sistema de guardado que nos permite almacenar en memoria tanto el componente de Transform de los objetos como las propiedades de las diferentes luces. De esta forma se nos permite crear una escena desde el editor sin necesidad de configurar dichos componentes desde código.
+            </p>
+        </div>
+    </div>
+</section>
 
-            </div>
-        </section>
 
     </main>
 
+    <script src="translations.js"></script>
     <script>
         let currentSlideIndex = 0;
         const totalSlides = 3;
@@ -180,6 +198,40 @@
                 }
             }
         });
+    </script>
+    <script>
+        function switchLanguage(lang, event = null) {
+            document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
+
+            if (event && event.target && event.target.classList) {
+                event.target.classList.add('active');
+            }
+
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langFromURL = urlParams.get('lang');
+            const lang = langFromURL || localStorage.getItem('preferredLanguage') || 'es';
+
+            switchLanguage(lang);
+        });
+    </script>
+    <script>
+        function goBackToIndex(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferredLanguage') || 'es';
+            window.location.href = `index.html?lang=${lang}`;
+        }
     </script>
 </body>
 </html>

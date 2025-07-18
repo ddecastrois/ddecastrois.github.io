@@ -10,30 +10,31 @@
     <header>
         <div class="header-content">
             <a href="#" class="logo">Daniel de Castro</a>
-            <a href="index.html" class="back-link">← Volver al portafolio</a>
+            <a href="#" class="back-link" data-translate="details_back_to_portfolio" onclick="goBackToIndex(event)">← Volver al portafolio</a>
+
         </div>
     </header>
 
     <main>
         <section class="project-hero">
             <h1>Soul Apart</h1>
-            <p class="subtitle">3D Bullet hell hecho para la Global Game Jam</p>
+            <p class="subtitle" data-translate="details_jam_subtitle">3D Bullet hell hecho para la Global Game Jam</p>
             
             <div class="project-meta">
                 <div class="meta-item">
-                    <div class="meta-label">Duración</div>
-                    <div class="meta-value">48 horas</div>
+                    <div class="meta-label" data-translate="details_duration_label">Duración</div>
+                    <div class="meta-value" data-translate="details_jam_duration_value">48 horas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Equipo</div>
-                    <div class="meta-value">6 personas</div>
+                    <div class="meta-label" data-translate="details_team_label">Equipo</div>
+                    <div class="meta-value" data-translate="details_jam_team_value">6 personas</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Engine</div>
+                    <div class="meta-label" data-translate="details_engine_label">Engine</div>
                     <div class="meta-value">Unity</div>
                 </div>
                 <div class="meta-item">
-                    <div class="meta-label">Plataforma</div>
+                    <div class="meta-label" data-translate="details_platform_label">Plataforma</div>
                     <div class="meta-value">PC</div>
                 </div>
             </div>
@@ -61,17 +62,16 @@
         </section>
 
         <div class="project-links">
-            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" class="btn-primary">🎮 Jugar en Steam</a>
-            <a href="#" class="btn-secondary">📹 Ver tráiler</a>
+            <a href="https://store.steampowered.com/app/3719120/Inside_the_Crows_Nest/" class="btn-primary">Itch.io →</a>
         </div>
 
         <section class="content-section">
-            <h2>Descripción del Proyecto</h2>
+            <h2 data-translate="details_description_title">Descripción del Proyecto</h2>
             <p data-translate="project_soul_description">Proyecto desarrollado en 48 horas como entrada para una game jam, en colaboración con diseñadores y artistas. Se trata de un juego 3D tipo bullet hell creado en Unity, en el que el jugador, con muy poca vida, debe esquivar ataques enemigos y devolver aquellos proyectiles que lo permiten para derrotar a una bruja.</p>
             </section>
 
         <section class="content-section">
-            <h2>Tecnologías Utilizadas</h2>
+            <h2 data-translate="details_tech_title">Tecnologías Utilizadas</h2>
             <div class="tech-stack">
                 <span class="tech-tag">Unity</span>
                 <span class="tech-tag">C#</span>
@@ -81,26 +81,36 @@
         </section>
 
         <section class="content-section">
-            <h2>Tareas asignadas</h2>
-            <p>Mi rol principal se centró en el movimiento principal del personaje y varios de los ataques presentes en pantalla. Además, también participé en el prototipado de varias mecánicas que acabaron siendo descartadas con la intención de simplificar el bucle de juego.</p>
+            <h2 data-translate="details_tasks_title">Tareas asignadas</h2>
+            <p data-translate="details_jam_tasks_intro">
+                Mi rol principal se centró en el movimiento principal del personaje y varios de los ataques presentes en pantalla. Además, también participé en el prototipado de varias mecánicas que acabaron siendo descartadas con la intención de simplificar el bucle de juego.
+            </p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Movimiento del jugador</h3>
-                    <p>Lo primero que se hizo en el proyecto fue conseguir una primera iteración del movimiento con la que poder avanzar en el juego. Se empezó con una primera versión simple y se le añadió movimiento con aceleración en las siguientes iteraciones </p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_jam_movement_title">Movimiento del jugador</span></h3>
+                    <p data-translate="details_jam_movement_text">
+                        Lo primero que se hizo en el proyecto fue conseguir una primera iteración del movimiento con la que poder avanzar en el juego. Se empezó con una primera versión simple y se le añadió movimiento con aceleración en las siguientes iteraciones
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧠</span> Ataques en pantalla </h3>
-                    <p>El bucle principal del juego consiste en esquivar y devolver los ataques. La parte central de mi trabajo consistió en desarrollar los ataques que se decidían desde diseño. Estos ataques consisten principalmente en proyectiles lanzados con patrones concretos. </p>
+                    <h3><span class="feature-icon">🧠</span> <span data-translate="details_jam_attacks_title">Ataques en pantalla</span></h3>
+                    <p data-translate="details_jam_attacks_text">
+                        El bucle principal del juego consiste en esquivar y devolver los ataques. La parte central de mi trabajo consistió en desarrollar los ataques que se decidían desde diseño. Estos ataques consisten principalmente en proyectiles lanzados con patrones concretos.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🧩</span> Mecánicas descartadas</h3>
-                    <p>A lo largo del desarrollo se realizaron varios ataques que el jugador debería esquivar así como barriles que caerían con botín para el jugador. Estas mecánicas, aunque estaban terminadas de desarrollar se acabaron descartando con el objetivo de que el juego sea más claro.</p>
+                    <h3><span class="feature-icon">🧩</span> <span data-translate="details_jam_cut_title">Mecánicas descartadas</span></h3>
+                    <p data-translate="details_jam_cut_text">
+                        A lo largo del desarrollo se realizaron varios ataques que el jugador debería esquivar así como barriles que caerían con botín para el jugador. Estas mecánicas, aunque estaban terminadas de desarrollar se acabaron descartando con el objetivo de que el juego sea más claro.
+                    </p>
                 </div>
             </div>
         </section>
 
+
     </main>
 
+    <script src="translations.js"></script>
     <script>
         let currentSlideIndex = 0;
         const totalSlides = 3;
@@ -164,6 +174,40 @@
                 }
             }
         });
+    </script>
+    <script>
+        function switchLanguage(lang, event = null) {
+            document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('active'));
+
+            if (event && event.target && event.target.classList) {
+                event.target.classList.add('active');
+            }
+
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langFromURL = urlParams.get('lang');
+            const lang = langFromURL || localStorage.getItem('preferredLanguage') || 'es';
+
+            switchLanguage(lang);
+        });
+    </script>
+    <script>
+        function goBackToIndex(event) {
+            event.preventDefault();
+            const lang = localStorage.getItem('preferredLanguage') || 'es';
+            window.location.href = `index.html?lang=${lang}`;
+        }
     </script>
 </body>
 </html>
