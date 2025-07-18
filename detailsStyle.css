@@ -112,12 +112,15 @@
         .hero-carousel {
             position: relative;
             aspect-ratio: 4 / 3;
+            width: 100%;
+            max-width: 1000px; /* ajusta según tu diseño */
+            margin: 0 auto 60px auto; /* ← esto lo centra horizontalmente */
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            margin-bottom: 60px;
             max-height: 600px;
         }
+
 
 
         .carousel-track {
@@ -303,6 +306,17 @@
             font-size: 1.5em;
             color: #e74c3c;
         }
+
+        .feature-icon-img {
+            width: 1.5em;
+            height: 1.5em;
+            object-fit: contain;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+
 
         .feature-card p {
             color: #7f8c8d;
