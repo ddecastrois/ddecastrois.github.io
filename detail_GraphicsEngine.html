@@ -87,43 +87,64 @@
     </p>
     <div class="features-grid">
         <div class="feature-card">
-            <h3><span class="feature-icon">🧠</span> <span data-translate="details_engine_input_title">Sistema de input</span></h3>
+            <h3>
+                <img src="res/detailIcons/controller.png" alt="Controller Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_input_title">Sistema de input</span>
+            </h3>
             <p data-translate="details_engine_input_text">
                 Apoyandose en la librería glfw se ha realizado un sistema de input para ratón y teclado que te permite capturar tanto las diferentes teclas como el movimiento del ratón y el offset de la rueda
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🧠</span> <span data-translate="details_engine_jobs_title">Sistema de trabajos</span></h3>
+            <h3>
+                <img src="res/detailIcons/Threads.png" alt="Threads Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_jobs_title">Sistema de trabajos</span>
+            </h3>
             <p data-translate="details_engine_jobs_text">
                 Se ha implementado un sistema de hilos en los que realizar aquellas tareas complejas de forma que la aplicación se mantenga usable en todo momento. Con el objetivo de que estos hilos puedan devolver el resultado de cualquier acción, se ha hecho uso de funciones templatizadas, generalizando el código lo máximo posible.
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🧩</span> <span data-translate="details_engine_lua_title">Scripting en LUA</span></h3>
+            <h3>
+                <img src="res/detailIcons/script.png" alt="Scripting Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_lua_title">Scripting en LUA</span>
+            </h3>
             <p data-translate="details_engine_lua_text">
                 Se han creado e integrado las bases de un sistema de scripting con LUA. Este sistema es escalable, de forma que en un futuro se podría trabajar en el y permitir al usuario realizar acciones en LUA directamente, sin tener que utilizar C++.
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_physics_title">Integración de físicas</span></h3>
+            <h3>
+                <img src="res/detailIcons/script.png" alt="Scripting Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_physics_title">Integración de físicas</span>
+            </h3>
             <p data-translate="details_engine_physics_text">
                 Se ha integrado la API Bullet en el motor, permitiendo crear un sistema de físicas con los objetos en escena. Esta librería permite tener tanto objetos físicos estáticos como "Rigidbodies" y controla las interacciones entre los mismos.
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_ecs_title">Jerarquías de objetos con ECS</span></h3>
+            <h3>
+                <img src="res/detailIcons/diagram.png" alt="Diagram Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_ecs_title">Jerarquías de objetos con ECS</span>
+            </h3>
             <p data-translate="details_engine_ecs_text">
                 Una tarea muy importante realizada en el motor ha sido la abstracción del mismo de forma que sea sencillo de utilizar por el usuario. Es por ello que se ha creado un sistema de objetos que nos permite realizar por debajo todas las acciones necesarias para controlar las diferentes entidades existentes y sus respectivas propiedades, mientras que el usuario tan solo debe pensar en que tipo de objeto le interesa en cada momento. Este sistema también abstrae las físicas integradas de la librería, permitiendo al usuario crear un objeto con físicas de forma sencilla.
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_editor_title">Editor realizado con ImGui</span></h3>
+            <h3>
+                <img src="res/detailIcons/editor.png" alt="Editor Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_editor_title">Editor realizado con ImGui</span>
+            </h3>
             <p data-translate="details_engine_editor_text">
                 Con intención de facilitar la depuración del motor así como la creación de escenas en el mismo se ha desarrollado un editor haciendo uso de ImGui. Desde este editor podremos ver la jerarquía de objetos en la escena así como editar sus propiedades básicas, ya sea su componente de "Transform", sus propiedades físicas o el tipo de luz y sus propiedades en caso de serlo.
             </p>
         </div>
         <div class="feature-card">
-            <h3><span class="feature-icon">🎒</span> <span data-translate="details_engine_save_title">Prototipo de sistema de guardado de escenas</span></h3>
+            <h3>
+                <img src="res/detailIcons/Saving.png" alt="Saving Icon" class="feature-icon-img" />
+                <span data-translate="details_engine_save_title">Prototipo de sistema de guardado de escenas</span>
+            </h3>
             <p data-translate="details_engine_save_text">
                 Se ha creado una versión inicial de un sistema de guardado que nos permite almacenar en memoria tanto el componente de Transform de los objetos como las propiedades de las diferentes luces. De esta forma se nos permite crear una escena desde el editor sin necesidad de configurar dichos componentes desde código.
             </p>
