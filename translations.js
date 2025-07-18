@@ -160,11 +160,11 @@ const translations = {
         mini_bullet_description: "Prototipo de bullet hell espacial desarrollado en Unity, centrado en combates por oleadas con patrones de disparo cada vez más exigentes. Combina jugabilidad arcade clásica con un ritmo intenso y progresivo.",
         
         // Multiplayer Pacman
-        mini_pacman_title: "Multiplayer pacman",
+        mini_pacman_title: "Pacman multijugador - 2023",
         mini_pacman_description: "Prototipo multijugador inspirado en Pac-Man, desarrollado con Unity y Photon PUN.",
         
         // Mobile App
-        mini_mobile_title: "Mobile app",
+        mini_mobile_title: "Aplicación móvil - 2025",
         mini_mobile_description: "Aplicación móvil desarrollada con Android Studio que mediante una API te permite acceder a un listado de juegos filtrando por nota y desarrollador.",
         
         // Habilidades
@@ -353,7 +353,7 @@ const translations = {
         mini_pacman_description: "Multiplayer prototype inspired by Pac-Man, developed with Unity and Photon PUN.",
         
         // Mobile App
-        mini_mobile_title: "Mobile app",
+        mini_mobile_title: "Mobile app - 2025",
         mini_mobile_description: "Mobile application developed with Android Studio that through an API allows you to access a list of games filtering by rating and developer.",
         
         // Skills
