@@ -104,7 +104,7 @@ const translations = {
         details_platformer_duration_value: "6 meses",
         details_platformer_team_value: "2 personas",
 
-        details_platformer_tasks_intro: "Mi rol principal se centró en la programación del movimiento del jugador, sistemas de IA y combate y la integración de animaciones.",
+        details_platformer_tasks_intro: "Mi rol principal se centró en la programación del movimiento del jugador, sistemas de IA y combate y la integración de animaciones, aunque ambos miembros del equipo participamos en la totalidad del proyecto.",
 
         details_platformer_ai_title: "IA y combate",
         details_platformer_ai_text: "Creación de una máquina de estados para establecer los comportamientos de los diferentes tipos de enemigos, así como una máquina especial para el jefe final.",
@@ -222,7 +222,7 @@ const translations = {
         details_crows_save_text: "A manual save system was implemented with the option of autosave. This system ties into the level streaming system to store the state of each room, enemies, and puzzle progress.",
         details_crows_script_title: "Participation in Level Scripting",
         details_crows_script_text: "Together with the designers, I helped with level scripting, implementing specific events and assisting with puzzle behavior.",
-        details_crows_description_p1: "Inside the Crow's Nest is the most ambitious project to date, developed as the final project for the HND in Game Programming at ESAT. Over the course of 9 intense months, I worked with a multidisciplinary team of 16 people to create a survival horror experience that pays tribute to the classics of the genre while introducing modern elements.",
+        details_crows_description_p1: "Inside the Crow's Nest is my most ambitious project to date, developed as the final project for the HND in Game Programming at ESAT. Over the course of 9 intense months, I worked with a multidisciplinary team of 16 people to create a survival horror experience that pays tribute to the classics of the genre while introducing modern elements.",
         details_crows_description_p2: "The game transports players to a tense and claustrophobic atmosphere, where every decision can mean the difference between survival and death. Inspired by iconic titles like the early Resident Evil games, we recreated the essence of classic survival horror with tank controls, strategically positioned fixed cameras, and resource management that keeps the player under constant pressure.",
         details_crows_description_p3: "With an approximate duration of an hour and a half, the game offers a complete experience that includes combat, complex puzzle solving, atmospheric exploration, and a narrative told through environmental storytelling and found documents.",
         details_crows_subtitle: "Classic Survival Horror Reimagined",
@@ -286,13 +286,13 @@ const translations = {
         
         // TFG Game
         project_tfg_title: "TFG Game",
-        project_tfg_description: "2D platform game developed in Unity as part of the Bachelor's Thesis, in collaboration with another developer and using Git for version control. The game includes enemies with artificial intelligence, a stealth system, loot and inventory, as well as sound effects and combat mechanics. It focused on creating a smooth and complete experience from design to final implementation.",
+        project_tfg_description: "2D platform game developed in Unity as part of the Bachelor's Final project, in collaboration with another developer and using Git for version control. The game includes enemies with artificial intelligence, a stealth system, loot and inventory, as well as sound effects and combat mechanics. It focused on creating a smooth and complete experience from design to final implementation.",
         details_platformer_subtitle: "2D Platformer Game",
 
         details_platformer_duration_value: "6 months",
         details_platformer_team_value: "2 people",
 
-        details_platformer_tasks_intro: "My main role focused on programming the player movement, AI and combat systems, and animation integration.",
+        details_platformer_tasks_intro: "My main role focused on player movement programming, AI and combat systems and animation integration, although both members of the team participated in the entire project.",
 
         details_platformer_ai_title: "AI and Combat",
         details_platformer_ai_text: "Created a finite state machine to define behaviors for different types of enemies, along with a dedicated machine for the final boss.",
@@ -338,11 +338,11 @@ const translations = {
         
         // Minimalist Game
         mini_minimal_title: "Minimalist game",
-        mini_minimal_description: "Minimalist arcade game with geometric aesthetics, controlled only with the controller joysticks. The player manages two characters at once to defend a central crystal: one with shield and another with shots, combining action and coordination.",
+        mini_minimal_description: "Minimalist arcade game with geometric aesthetics, controlled only with the controller joysticks. The player manages two characters at once to defend a central crystal: one with a shield and another one which shoots, combining action and coordination.",
         
         // Bullet Hell
         mini_bullet_title: "Bullet hell",
-        mini_bullet_description: "Space bullet hell prototype developed in Unity, focused on wave-based combat with increasingly demanding shooting patterns. Combines classic arcade gameplay with an intense and progressive rhythm.",
+        mini_bullet_description: "Space bullet hell prototype developed in Unity, focused on wave-based combat with increasingly demanding shooting patterns. Combines classic arcade gameplay with an intense rhythm.",
         
         // Multiplayer Pacman
         mini_pacman_title: "Multiplayer pacman",
