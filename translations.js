@@ -349,7 +349,7 @@ const translations = {
         mini_bullet_description: "Space bullet hell prototype developed in Unity, focused on wave-based combat with increasingly demanding shooting patterns. Combines classic arcade gameplay with an intense rhythm.",
         
         // Multiplayer Pacman
-        mini_pacman_title: "Multiplayer pacman",
+        mini_pacman_title: "Multiplayer pacman - 2023",
         mini_pacman_description: "Multiplayer prototype inspired by Pac-Man, developed with Unity and Photon PUN.",
         
         // Mobile App
