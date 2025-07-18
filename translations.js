@@ -41,7 +41,7 @@ const translations = {
   
 
         // Graphics Engine
-        project_engine_title: "Graphics Engine",
+        project_engine_title: "Motor gráfico - 2025",
         project_engine_description: "Motor gráfico desarrollado desde cero. Implementa técnicas avanzadas como forward y deferred rendering, sistema de sombras, portales, físicas mediante el uso de la librería Bullet, scripting en Lua y una arquitectura ECS con jerarquías. Además, incluye herramientas de edición integradas con ImGui y un sistema de hilos para tareas pesadas.",
 
         details_engine_tasks_title: "Tareas asignadas",
@@ -78,7 +78,7 @@ const translations = {
 
         
         // Meta Avatars
-        project_avatars_title: "Networked Meta Avatars",
+        project_avatars_title: "Meta Avatars en red - 2023",
         project_avatars_description: "Proyecto de realidad virtual desarrollado como parte del Trabajo de Fin de Máster, centrado en la integración de avatares de Meta en un entorno multijugador con interacción. Utilizando Proton y tecnología de Meta para VR, se implementó una sala virtual compartida donde varios usuarios pueden conectarse y comunicarse a través de sus avatares, con capacidad para interactuar con el entorno. El objetivo fue estudiar la viabilidad de utilizar entornos de realidad virtual como alternativa más humana y accesible a las sesiones psicológicas tradicionales, evitando la frialdad de las videollamadas sin requerir presencialidad.",
 
         details_vr_subtitle: "Experiencia social en VR usando avatares de Meta",
@@ -118,7 +118,7 @@ const translations = {
         
         // Soul Apart
         project_soul_title: "Game Jam - Soul apart",
-        project_soul_description: "Proyecto desarrollado en 48 horas como entrada para una game jam, en colaboración con diseñadores y artistas. Se trata de un juego 3D tipo bullet hell creado en Unity, en el que el jugador, con muy poca vida, debe esquivar ataques enemigos y devolver aquellos proyectiles que lo permiten para derrotar a una bruja.",
+        project_soul_description: "Proyecto desarrollado en 48 horas como proyecto para una game jam, en colaboración con diseñadores y artistas. Se trata de un juego 3D tipo bullet hell creado en Unity, en el que el jugador, con muy poca vida, debe esquivar ataques enemigos y devolver aquellos proyectiles que lo permiten para derrotar a una bruja.",
         details_jam_subtitle: "3D Bullet hell hecho para la Global Game Jam",
 
         details_jam_duration_value: "48 horas",
@@ -232,7 +232,7 @@ const translations = {
   
         
         // Graphics Engine
-        project_engine_title: "Graphics Engine",
+        project_engine_title: "Graphics Engine - 2025",
         project_engine_description: "Graphics engine developed from scratch. Implements advanced techniques such as forward and deferred rendering, shadow system, portals, physics using the Bullet library, Lua scripting and an ECS architecture with hierarchies. It also includes integrated editing tools with ImGui and a threading system for heavy tasks.",
 
         details_engine_tasks_title: "Assigned Tasks",
@@ -268,7 +268,7 @@ const translations = {
 
         
         // Meta Avatars
-        project_avatars_title: "Networked Meta Avatars",
+        project_avatars_title: "Networked Meta Avatars - 2023",
         project_avatars_description: "Virtual reality project developed as part of the Master's Thesis, focused on the integration of Meta avatars in a multiplayer environment with interaction. Using Proton and Meta technology for VR, a shared virtual room was implemented where multiple users can connect and communicate through their avatars, with the ability to interact with the environment. The goal was to study the feasibility of using virtual reality environments as a more human and accessible alternative to traditional psychological sessions, avoiding the coldness of video calls without requiring physical presence.",
         details_vr_subtitle: "VR Social Experience using Meta avatars",
         
